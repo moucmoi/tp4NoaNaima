@@ -5,5 +5,5 @@ public class Horaire{
     public Horaire(String start, String end){
         this.startDate=start;
         this.endDate=end;
-    } 
+    }
 }
