@@ -16,5 +16,13 @@ public class Group{
 
     public void ajouterEtudiant(Cours cours){
         this.etudiant.add(cours);
+    }
 
+    public List getEtudiant(){
+        return this.etudiant;
+    }
+
+    public List getCours{
+        return this.cours;
+    }
 }
