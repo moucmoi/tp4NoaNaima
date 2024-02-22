@@ -9,4 +9,12 @@ public class Group{
         this.etudiant=new ArrayList<>();
         this.cours=new ArrayList<>();
     }
+
+    public void ajouterEtudiant(Etudiant etudiant){
+        this.etudiant.add(etudiant);
+    }
+
+    public void ajouterEtudiant(Cours cours){
+        this.etudiant.add(cours);
+
 }
