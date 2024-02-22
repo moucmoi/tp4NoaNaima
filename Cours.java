@@ -1,4 +1,4 @@
-public Class Cours{
+public class Cours{
     private Horaire horaire;
     private Groupe groupe;
     private Matiere matiere;
