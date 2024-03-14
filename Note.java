@@ -6,6 +6,16 @@ public class Note{
     private Etudiant etudiant;
     private Matiere matiere;
 
+
+    public Note(String nomControle, int note, String appreciation, int rang, Etudiant etudiant, Matiere matiere){
+        this.nomControle = nomControle;
+        this.note = note;
+        this.appreciation = appreciation;
+        this.rang = rang;
+        this.etudiant = etudiant;
+        this.matiere = matiere;
+    }
+
     public void setNomControle(String nomControle) {
         this.nomControle = nomControle;
     }
@@ -27,15 +37,6 @@ public class Note{
     }
 
     public void setMatiere(Matiere matiere) {
-        this.matiere = matiere;
-    }
-
-    public Note(String nomControle, int note, String appreciation, int rang, Etudiant etudiant, Matiere matiere){
-        this.nomControle = nomControle;
-        this.note = note;
-        this.appreciation = appreciation;
-        this.rang = rang;
-        this.etudiant = etudiant;
         this.matiere = matiere;
     }
 
