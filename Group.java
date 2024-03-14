@@ -5,7 +5,7 @@ public class Group{
     private List<Etudiant> etudiant;
     private List<Cours> cours;
 
-    public Group(){
+    public Groupe(){
         this.etudiant=new ArrayList<>();
         this.cours=new ArrayList<>();
     }
