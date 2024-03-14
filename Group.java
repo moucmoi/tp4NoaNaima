@@ -22,7 +22,7 @@ public class Group{
         return this.etudiant;
     }
 
-    public List getCours{
+    public List getCours(){
         return this.cours;
     }
 }
