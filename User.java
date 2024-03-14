@@ -41,4 +41,8 @@ public class User{
     public void ajouteCours(Cours cours){
         this.cours.add(cours);
     }
+
+    public void creationCours(String nom,Horaire horaire,List<Groupe> groupe,Matiere matiere){
+        Cours cours=new Cours(nom, horaire, groupe, matiere, this);
+    }
 }
