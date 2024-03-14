@@ -11,6 +11,38 @@ public class Cours{
         this.user=new ArrayList<>();
     }
 
+    public Horaire getHoraire() {
+        return this.horaire;
+    }
+
+    public void setHoraire(Horaire horaire) {
+        this.horaire = horaire;
+    }
+
+    public Groupe getGroupe() {
+        return this.groupe;
+    }
+
+    public void setGroupe(Groupe groupe) {
+        this.groupe = groupe;
+    }
+
+    public Matiere getMatiere() {
+        return this.matiere;
+    }
+
+    public void setMatiere(Matiere matiere) {
+        this.matiere = matiere;
+    }
+
+    public User getUser() {
+        return this.user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;     
+    }
+
     public void ajouteGroupe(Groupe groupe){
         this.groupe.add(groupe);
     }
