@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class User{
     private String nom;
     private String prenom;
@@ -8,7 +11,7 @@ public class User{
         this.nom = nom;
         this.prenom = prenom;
         this.dateDeNaissance = dateDeNaissance;
-        this.cours=new ArrayList<>();
+        this.cours = new ArrayList<>();
     }
 
     public String getNom(){
@@ -24,15 +27,15 @@ public class User{
     }
 
     public void setNom(String nom){
-        return this.nom=nom;
+        this.nom = nom;
     }
 
     public void setPrenom(String prenom){
-        return this.prenom=prenom;
+        this.prenom = prenom;
     }
 
     public void setDateDeNaissance(String dateDeNaissance){
-        return this.dateDeNaissance=dateDeNaissance;
+        this.dateDeNaissance = dateDeNaissance;
     }
 
     public void ajouteCours(Cours cours){
