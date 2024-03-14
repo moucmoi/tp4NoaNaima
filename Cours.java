@@ -2,6 +2,8 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Cours{
+    private String nom;
+
     private Horaire horaire;
     private List<Groupe> groupe;
     private Matiere matiere;
@@ -12,6 +14,14 @@ public class Cours{
         this.groupe = new ArrayList<>();
         this.matiere = matiere;
         this.user = user;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public Horaire getHoraire() {
