@@ -6,6 +6,30 @@ public class Note{
     private Etudiant etudiant;
     private Matiere matiere;
 
+    public void setNomControle(String nomControle) {
+        this.nomControle = nomControle;
+    }
+
+    public void setNote(int note) {
+        this.note = note;
+    }
+
+    public void setAppreciation(String appreciation) {
+        this.appreciation = appreciation;
+    }
+
+    public void setRang(int rang) {
+        this.rang = rang;
+    }
+
+    public void setEtudiant(Etudiant etudiant) {
+        this.etudiant = etudiant;
+    }
+
+    public void setMatiere(Matiere matiere) {
+        this.matiere = matiere;
+    }
+
     public Note(String nomControle, int note, String appreciation, int rang, Etudiant etudiant, Matiere matiere){
         this.nomControle = nomControle;
         this.note = note;
