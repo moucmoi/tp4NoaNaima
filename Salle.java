@@ -18,6 +18,4 @@ public class Salle{
     public void setHoraire(Horaire horaire) {
         this.horaire = horaire;
     }
-
-
 }

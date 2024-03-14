@@ -1,11 +1,13 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class Groupe{
+public class Groupe{ 
+    private int numero;
     private List<Etudiant> etudiant;
     private List<Cours> cours;
 
-    public Groupe(){
+    public Groupe(int numero){
+        this.numero=numero;
         this.etudiant = new ArrayList<>();
         this.cours = new ArrayList<>();
     }
