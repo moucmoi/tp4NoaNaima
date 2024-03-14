@@ -4,13 +4,13 @@ import java.util.ArrayList;
 public class Cours{
     private Horaire horaire;
     private List<Groupe> groupe;
-    private List<Matiere> matiere;
+    private Matiere matiere;
     private User user;
 
-    public Cours(Horaire horaire,Groupe groupe,Matiere matiere,User user){
+    public Cours(Horaire horaire,Matiere matiere,User user){
         this.horaire = horaire;
         this.groupe = new ArrayList<>();
-        this.matiere = new ArrayList<>();
+        this.matiere = matiere;
         this.user = user;
     }
 
@@ -26,16 +26,12 @@ public class Cours{
         return this.groupe;
     }
 
-    public void setGroupe(Groupe groupe) {
-        this.groupe.add(groupe);
-    }
-
-    public List<Matiere> getMatiere() {
+    public Matiere getMatiere() {
         return this.matiere;
     }
 
     public void setMatiere(Matiere matiere) {
-        this.matiere.add(matiere);
+        this.matiere=matiere;
     }
 
     public User getUser() {
@@ -48,9 +44,5 @@ public class Cours{
 
     public void ajouteGroupe(Groupe groupe){
         this.groupe.add(groupe);
-    }
-
-    public void ajouteMatiere(Matiere matiere){
-        this.matiere.add(matiere);
     }
 }
