@@ -7,14 +7,26 @@ public class Matiere {
 
     public Matiere(String nom){
         this.nomMatiere = nom;
-        this.lesCours = new Arraylist<>();
+        this.lesCours = new ArrayList<>();
     }
 
-    public getNom(){
-        return this.nom;
+    public String getNomMatiere(){
+        return this.nomMatiere;
     }
 
-    public ajouteCours(Cours cour){
-        this.lesCours.add(cour);
+    public void setNomMatiere(String nomMatiere) {
+        this.nomMatiere = nomMatiere;
+    }
+
+    public List<Cours> getLesCours() {
+        return this.lesCours;
+    }
+
+    public void setLesCours(List<Cours> lesCours) {
+        this.lesCours = lesCours;
+    }
+
+    public void ajouteCours(Cours cours){
+        this.lesCours.add(cours);
     }
 }
