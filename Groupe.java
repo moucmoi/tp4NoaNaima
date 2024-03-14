@@ -12,6 +12,14 @@ public class Groupe{
         this.cours = new ArrayList<>();
     }
 
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
     public void ajouterEtudiant(Etudiant etudiant){
         this.etudiant.add(etudiant);
     }
